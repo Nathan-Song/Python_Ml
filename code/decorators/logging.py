@@ -1,3 +1,5 @@
+
+
 def logging(cls):
     for attr_name, attr_value in cls.__dict__.items():
         if callable(attr_value):
@@ -22,6 +24,7 @@ def logging(cls):
 class Math:
 
     def double(self, x):
+        pdb.set_trace()
         return x * 2
 
     def half(self, x):
